@@ -33,27 +33,27 @@ const ProfListItem = ({prof={
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
                     <strong style={{"color":"white"}}>{prof.films}</strong>
                     <br/>
-                    <text style={{"color":"white", "background-color":"black"}}>FILMS</text>
+                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none"}}>FILMS</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
                     <strong style={{"color":"white"}}>{prof.thisyear}</strong>
                     <br/>
-                    <text style={{"color":"white", "background-color":"black"}}>THIS YEAR</text>
+                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none"}}>THIS YEAR</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
                     <strong style={{"color":"white"}}>{prof.lists}</strong>
                     <br/>
-                    <text style={{"color":"white", "background-color":"black"}}>LISTS</text>
+                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none"}}>LISTS</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
                     <strong style={{"color":"white"}}>{prof.followingCount}</strong>
                     <br/>
-                    <text style={{"color":"white", "background-color":"black"}}>FOLLOWING</text>
+                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none"}}>FOLLOWING</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px"}}>
                     <strong style={{"color":"white"}}>{prof.followersCount}</strong>
                     <br/>
-                    <text style={{"color":"white", "background-color":"black"}}>FOLLOWERS</text>
+                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none"}}>FOLLOWERS</Link>
                     </div>
 
 
@@ -68,22 +68,22 @@ const ProfListItem = ({prof={
             <div className="container" style={{"border-style":"solid", "border-color":"grey"}}>
                 <div className="row">
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <text style={{"color":"white"}}><strong>Profile</strong></text>
+                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Profile</strong></Link>
                     </div>
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <text style={{"color":"white"}}><strong>Films</strong></text>
+                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Films</strong></Link>
                     </div>
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <text style={{"color":"white"}}><strong>Likes</strong></text>
+                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Likes</strong></Link>
                     </div>
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <text style={{"color":"white"}}><strong>Tags</strong></text>
+                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Tags</strong></Link>
                     </div>
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <text style={{"color":"white"}}><strong>Stats</strong></text>
+                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Stats</strong></Link>
                     </div>
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <text style={{"color":"white"}}><strong>Network</strong></text>
+                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Network</strong></Link>
                     </div>
                 </div>
             </div>
@@ -97,16 +97,24 @@ const ProfListItem = ({prof={
                 </div>
                 <div className="row" style={{"width":"100%", "border-style":"solid", "border-width":"thin", "border-color":"white", "border-left":"none", "border-right":"none", "border-bottom":"none"}}>
                     <div className="col-3">
-                        <img src="../pictures/incredibles.jpg" height="350px" width="250px" style={{"padding-top":"15px"}}/>
-                    </div>
+                        <Link to="/movie/profile">
+                            <img src="../pictures/incredibles.jpg" height="350px" width="250px" style={{"padding-top":"15px"}}/>
+                        </Link>
+                        </div>
                     <div className="col-3" >
+                        <Link to="/movie/profile">
                         <img src="../pictures/zootopia.webp" height="350px" width="250px" style={{"padding-top":"15px"}} />
+                        </Link>
                     </div>
                     <div className="col-3" >
+                        <Link to="/movie/profile">
                         <img src="../pictures/coco.webp" height="350px" width="250px" style={{"padding-top":"15px"}} />
+                        </Link>
                     </div>
                     <div className="col-3" >
+                        <Link to="/movie/profile">
                         <img src="../pictures/Your_name_poster.jpg" height="350px" width="250px" style={{"padding-top":"15px"}} />
+                        </Link>
                     </div>
                 </div>
 
@@ -121,16 +129,24 @@ const ProfListItem = ({prof={
                 </div>
                 <div className="row"  style={{"width":"100%", "border-style":"solid", "border-width":"thin", "border-color":"white", "border-left":"none", "border-right":"none", "border-bottom":"none"}}>
                     <div className="col-3">
+                        <Link  to="/movie/profile">
                         <img src="../pictures/readyplayerone.jpg" height="350px" width="250px" style={{"padding-top":"15px"}} />
+                        </Link>
                     </div>
                     <div className="col-3" >
+                        <Link  to="/movie/profile">
                         <img src="../pictures/Transformers5.jpg" height="350px" width="250px" style={{"padding-top":"15px"}} />
+                        </Link>
                     </div>
                     <div className="col-3" >
+                        <Link  to="/movie/profile">
                         <img src="../pictures/interstellar.jpg" height="350px" width="250px" style={{"padding-top":"15px"}} />
+                        </Link>
                     </div>
                     <div className="col-3" >
+                        <Link  to="/movie/profile">
                         <img src="../pictures/bighero6.jpeg" height="350px" width="250px" style={{"padding-top":"15px"}} />
+                        </Link>
                     </div>
                 </div>
 

@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+
 
 const EditProfListItem = ({prof={
         "firstName": "Jiedong", "lastName": "Lang", "handle": "Code Elite",
@@ -18,22 +20,22 @@ const EditProfListItem = ({prof={
             <div className="container">
                 <div className="row">
                     <div className="col-2">
-                        <text>PROFILE</text>
+                        <Link to="/movie/profile" style={{"text-decoration":"none"}}>PROFILE</Link>
                     </div>
                     <div className="col-2">
-                        <text style={{"color":"green"}}>AVATAR</text>
+                        <Link to="/movie/profile" style={{"text-decoration":"none", "color":"green"}}>AVATAR</Link>
                     </div>
                     <div className="col-2">
-                        <text style={{"color":"green"}}>CONNECTIONS</text>
+                        <Link to="/movie/profile" style={{"text-decoration":"none", "color":"green"}}>CONNECTIONS</Link>
                     </div>
                     <div className="col-2">
-                        <text style={{"color":"green"}}>NOTIFICATIONS</text>
+                        <Link to="/movie/profile" style={{"text-decoration":"none", "color":"green"}}>NOTIFICATIONS</Link>
                     </div>
                     <div className="col-2">
-                        <text style={{"color":"green"}}>STORES & STREAMING</text>
+                        <Link to="/movie/profile" style={{"text-decoration":"none", "color":"green"}}>STORES & STREAMING</Link>
                     </div>
                     <div className="col-2">
-                        <text style={{"color":"green"}}>IMPORT & EXPORT</text>
+                        <Link to="/movie/profile" style={{"text-decoration":"none", "color":"green"}}>IMPORT & EXPORT</Link>
                     </div>
                 </div>
             </div>

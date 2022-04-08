@@ -41,42 +41,42 @@ const SearchList = () => {
                             <div className="list-group" style={{"background-color": "#1e2125", "width":"70%"}}>
 
                                 <Link className="list-group-item"
-                                      to="/tuiter/home" id="ExploreScreen" style={{"background-color": "#1e2125", "color": "brown"}}>
+                                      to="/movie/profile" style={{"background-color": "#1e2125", "color": "brown"}}>
                                     <div className="d-none d-xxl-inline d-xl-inline">All</div>
                                 </Link >
 
                                 <Link className="list-group-item"
-                                      to="/tuiter/explore" id="explore" style={{"background-color": "#1e2125", "color": "white"}} onclick="SomeJavaScriptCode">
+                                      to="/movie/profile"  style={{"background-color": "#1e2125", "color": "white"}} onclick="SomeJavaScriptCode">
                                     <div className="d-none d-xxl-inline d-xl-inline">Films</div>
                                 </Link >
 
                                 <a className="list-group-item"
-                                   href="#" id = "notifications" style={{"background-color": "#1e2125", "color": "white"}}>
+                                   href="#"  style={{"background-color": "#1e2125", "color": "white"}}>
                                     <div className="d-none d-xxl-inline d-xl-inline">Reviews</div>
                                 </a >
 
                                 <a className="list-group-item"
-                                   href="#" id = "message" style={{"background-color": "#1e2125", "color": "white"}}>
+                                   href="#" style={{"background-color": "#1e2125", "color": "white"}}>
                                     <div className="d-none d-xxl-inline d-xl-inline">Stories</div>
                                 </a >
 
                                 <a className="list-group-item"
-                                   href="#" id = "bookmarks" style={{"background-color": "#1e2125", "color": "white"}}>
+                                   href="#"  style={{"background-color": "#1e2125", "color": "white"}}>
                                     <span className="d-none d-xxl-inline d-xl-inline">Cast, Crew or Studios</span>
                                 </a >
 
                                 <a className="list-group-item"
-                                   href="#" id = "lists" style={{"background-color": "#1e2125", "color": "white"}}>
+                                   href="#"  style={{"background-color": "#1e2125", "color": "white"}}>
                                     <span className="d-none d-xxl-inline d-xl-inline">Podcast episodes</span>
                                 </a >
 
                                 <Link className="list-group-item"
-                                      to="/tuiter/profile" id="profile" style={{"background-color": "#1e2125", "color": "white"}}>
+                                      to="/movie/profile" style={{"background-color": "#1e2125", "color": "white"}}>
                                     <span className="d-none d-xxl-inline d-xl-inline">Journal articles</span>
                                 </Link >
 
                                 <a className="list-group-item"
-                                   href="#" id = "more" style={{"background-color": "#1e2125", "color": "white"}}>
+                                   href="#" style={{"background-color": "#1e2125", "color": "white"}}>
                                     <span className="d-none d-xxl-inline d-xl-inline">Members or HQs</span>
                                 </a >
 
