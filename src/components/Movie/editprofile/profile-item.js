@@ -1,48 +1,125 @@
 import React from "react";
 
 const EditProfListItem = ({prof={
-        "firstName": "Martin", "lastName": "Shi", "handle": "Code Elite",
+        "firstName": "Jiedong", "lastName": "Lang", "handle": "Code Elite",
         "profilePicture": "../../../../tuiter/martin.jpg",     "bannerPicture": "../../../../tuiter/interstellar.jpg",
         "bio": "Student, Data Scientist, Algorithm Engineer",
         "website": "youtube.com/webdevtv",
         "location": "Boston, MA",    "dateOfBirth": "3/1998",    "dateJoined": "12/2020",
-        "followingCount": 312,    "followersCount": 180
+    "films": 1638, "thisyear": 57, "lists": 12,   "followingCount": 666,    "followersCount": 0
 }})=> {
 
     return (
         <div>
-            <div style={{"height":"200px"}}>
-                <img src={prof.bannerPicture}  height="300px" width="100%"/>
-            </div>
+            <h1>Account Settings</h1>
 
-            <div style={{"padding-top": "40px", "padding-left": "16px", "position":"relative"}}>
-                <img src={prof.profilePicture} height="100px" width="100px" style={{"border-radius": "50%", "float": "left"}}/>
-            </div>
-            <div>
-                <div>
-                    <br/> <br/> <br/> <br/> <br/>
-                    <div style={{"width": "100%", "border-color":"lightgray", "border-width": "thin", "border-style": "solid"}}>
-                        <text style={{"color": "grey", "font-size": "15px", "padding-left":"10px"}}><strong>Name</strong></text>
-                        <br/>
-                        <text style={{"color": "white", "font-size": "15px", "padding-left":"10px"}}><strong>{prof.lastName}</strong></text>
-                        <text style={{"color": "white", "font-size": "15px"}}>  </text>
-                        <text style={{"color": "white", "font-size": "15px"}}><strong>{prof.firstName}</strong></text>
+            <br/>
 
+            <div className="container">
+                <div className="row">
+                    <div className="col-2">
+                        <text>PROFILE</text>
                     </div>
-                 </div>
-                <div>
-                    <br/> <br/>
-                    <div style={{"width": "100%", "border-color":"lightgray", "border-width": "thin", "border-style": "solid"}}>
-                        <text style={{"color": "grey", "font-size": "15px", "padding-left":"10px"}}><strong>Bio</strong></text>
-                        <br/>
-                        <text style={{"color": "white", "font-size": "15px", "padding-left":"10px"}}><strong>{prof.bio}</strong></text>
-                        <br/> <br/> <br/>
+                    <div className="col-2">
+                        <text style={{"color":"green"}}>AVATAR</text>
+                    </div>
+                    <div className="col-2">
+                        <text style={{"color":"green"}}>CONNECTIONS</text>
+                    </div>
+                    <div className="col-2">
+                        <text style={{"color":"green"}}>NOTIFICATIONS</text>
+                    </div>
+                    <div className="col-2">
+                        <text style={{"color":"green"}}>STORES & STREAMING</text>
+                    </div>
+                    <div className="col-2">
+                        <text style={{"color":"green"}}>IMPORT & EXPORT</text>
                     </div>
                 </div>
             </div>
 
+            <br/>
 
-            <br/> <br/> <br/>
+            <h3 style={{"padding-right":"50px"}}>Profile Settings</h3>
+
+            <div className="container">
+                <div className="row">
+                    <div className="col-6">
+                        <div className="container">
+                                Name: <br/>
+                                <input type="text" placeholder="Superman" style={{"width":"90%", "background-color":"grey"}}/>
+                            <br/><br/>
+                            <div className="row">
+                                <div className="col-6">
+                                    GivenName: <br/>
+                                    <input type="text" style={{"background-color":"grey"}}/>
+                                </div>
+                                <div className="col-6">
+                                    FamilyName: <br/>
+                                    <input type="text" style={{"background-color":"grey"}}/>
+                                </div>
+                            </div>
+                            <br/>
+                            Email Address: <br/>
+                            <input type="text" placeholder="superman@mail.com" style={{"width":"90%", "background-color":"grey"}}/>
+                            <br/><br/>
+                            <div className="row">
+                                <div className="col-6">
+                                    Location: <br/>
+                                    <input type="text" style={{"background-color":"grey"}}/>
+                                </div>
+                                <div className="col-6">
+                                    Website: <br/>
+                                    <input type="text" style={{"background-color":"grey"}}/>
+                                </div>
+                            </div>
+                            <br/>
+                            Bio: <br/>
+                            <input type="text" style={{"width":"90%", "height":"200px", "background-color":"grey"}}/>
+                            <br/> <br/>
+                            <div className="row">
+                                <div className="col-6">
+                                    <button type="button" style={{"width":"200px", "background-color":"purple"}}>CHANGE PASSWORD</button>
+                                </div>
+                                <div className="col-6">
+                                    <button type="button" style={{"width":"200px", "background-color":"green"}}>SAVE CHANGES</button>
+                                </div>
+                            </div>
+                            <br/> <br/>
+                        </div>
+
+                    </div>
+
+
+                    <div className="col-6">
+                        <h3>Favourite Films</h3>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-3" style={{"border-style":"solid", "border-color":"green", "height":"200px", "background-color":"grey"}}>
+                                    <br/><br/><br/>
+                                    <button type="button" style={{"background-color":"green", "border-radius":"50%"}}>+</button>
+                                </div>
+                                <div className="col-3" style={{"border-style":"solid", "border-color":"green", "height":"200px", "background-color":"grey"}}>
+                                    <br/><br/><br/>
+                                    <button type="button" style={{"background-color":"green", "border-radius":"50%"}}>+</button>
+                                </div>
+                                <div className="col-3" style={{"border-style":"solid", "border-color":"green", "height":"200px", "background-color":"grey"}}>
+                                    <br/><br/><br/>
+                                    <button type="button" style={{"background-color":"green", "border-radius":"50%"}}>+</button>
+                                </div>
+                                <div className="col-3" style={{"border-style":"solid", "border-color":"green", "height":"200px", "background-color":"grey"}}>
+                                    <br/><br/><br/>
+                                    <button type="button" style={{"background-color":"green", "border-radius":"50%"}}>+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
 
 
         </div>

@@ -10,6 +10,8 @@ import './vendors/fontawesome-free-6.1.0-web/css/all.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Movie from "./components/Movie";
 import ProfileScreen from "./components/Movie/profile/index";
+import EditProfileScreen from "./components/Movie/editprofile/index";
+import SearchScreen from "./components/Movie/search-screen/index";
 
 function App() {
     return (
@@ -22,6 +24,10 @@ function App() {
                            element={<Movie/>}>
                         <Route path="profile"
                                element={<ProfileScreen/>}/>
+                        <Route path="editprofile"
+                               element={<EditProfileScreen/>}/>
+                        <Route path="search"
+                               element={<SearchScreen/>}/>
                     </Route>
 
                 </Routes>
