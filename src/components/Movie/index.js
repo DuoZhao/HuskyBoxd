@@ -8,6 +8,7 @@ const reducers = combineReducers({SearchReducer, profileReducer})
 const store = createStore(reducers);
 
 const Movie = () => {
+    console.log("hello");
     return (
         <Provider store={store}>
             <Outlet/>

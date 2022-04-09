@@ -9,7 +9,7 @@ import './vendors/fontawesome-free-6.1.0-web/css/all.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Movie from "./components/Movie";
 import ProfileScreen from "./components/Movie/profile/index";
-import EditProfileScreen from "./components/Movie/editprofile/index";
+import EditProfileScreen from "./components/Movie/EditProfile/index";
 import SearchScreen from "./components/Movie/search-screen/index";
 import LoginScreen from "./components/Movie/LoginScreen/LoginScreen";
 import MovieDetailScreen from "./components/Movie/MovieDetailScreen/MovieDetailScreen";
@@ -30,8 +30,4 @@ function App() {
         </BrowserRouter>
     );
 }
-
-
-
-
 export default App;

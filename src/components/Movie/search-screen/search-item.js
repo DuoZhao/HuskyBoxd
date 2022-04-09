@@ -14,7 +14,7 @@ const SearchItem = ({prof={
                 <div className="row">
                     <div className="col-2">
                         <Link to="/movie/profile">
-                        <img src={prof.filmpicture}  height="150px" width="100%"/>
+                        <img src={prof.filmpicture}  height="150px" width="100%" alt={''}/>
                         </Link>
                     </div>
                     <div className="col-10">
