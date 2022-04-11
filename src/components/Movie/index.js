@@ -4,25 +4,14 @@ import SearchReducer from "./reducers/search-reducer";
 import {Provider} from "react-redux";
 import {createStore, combineReducers} from "redux";
 
-
-
-const reducers =
-    combineReducers({SearchReducer, profileReducer})
+const reducers = combineReducers({SearchReducer, profileReducer})
 const store = createStore(reducers);
 
 const Movie = () => {
+    console.log("hello");
     return (
         <Provider store={store}>
-        <div>
-
-            <div className="row mt-2">
-
-                <Outlet/>
-
-            </div>
-
-
-        </div>
+            <Outlet/>
         </Provider>
     );
 };
