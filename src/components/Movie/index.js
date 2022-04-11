@@ -1,15 +1,18 @@
 import {Outlet} from "react-router-dom";
 import profileReducer from "./reducers/profile-reducer";
-import {createStore} from "redux";
+import SearchReducer from "./reducers/search-reducer";
 import {Provider} from "react-redux";
+import {createStore, combineReducers} from "redux";
 
-const store = createStore(profileReducer);
+const reducers = combineReducers({SearchReducer, profileReducer})
+const store = createStore(reducers);
 
-const Tuiter = () => {
+const Movie = () => {
+    console.log("hello");
     return (
         <Provider store={store}>
             <Outlet/>
         </Provider>
     );
 };
-export default Tuiter;
+export default Movie;
