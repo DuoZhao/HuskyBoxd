@@ -9,9 +9,9 @@ import './vendors/fontawesome-free-5.15.4-web/css/fontawesome.min.css';
 import './vendors/fontawesome-free-6.1.0-web/css/all.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Movie from "./components/Movie";
-import ProfileScreen from "./components/Movie/profile/index";
-import EditProfileScreen from "./components/Movie/editprofile/index";
-import SearchScreen from "./components/Movie/search-screen/index";
+import ProfileScreen from "./components/Movie/Profile/index";
+import EditProfileScreen from "./components/Movie/EditProfile/index";
+import SearchScreen from "./components/Movie/Search-Screen/index";
 
 function App() {
     return (
