@@ -1,6 +1,6 @@
 
 import React, {useEffect, useState} from "react";
-import SearchItem from "../search-screen/search-item";
+import SearchItem from "../Search-Screen/search-item";
 import {useDispatch, useSelector}
     from "react-redux";
 import SearchReducer from "../reducers/search-reducer";
