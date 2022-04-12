@@ -3,7 +3,7 @@ import "./index.css";
 const MovieDetailComponent = () => {
     return (
         <>
-            <div>
+            <div className="wd-detail">
                 <div id="wd-detail-container">
                 </div>
                 <div className="container row ms-5">

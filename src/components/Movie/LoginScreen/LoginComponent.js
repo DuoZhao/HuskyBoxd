@@ -3,10 +3,10 @@ import "./index.css";
 const LoginComponent = () => {
     return (
         <>
-            <div className="container">
+            <div className="container wd-login">
                 <div className="row justify-content-center">
                     <div className="col-12 text-center align-self-center py-5">
-                        <div className="section pb-5 pt-5 pt-sm-2 text-center">
+                        <div className="pb-5 pt-5 pt-sm-2 text-center">
                             <h6 className="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
                             <input className="checkbox" type="checkbox" id="wd-reg-log" name="wd-reg-log"/>
                             <label htmlFor="wd-reg-log"/>
@@ -14,7 +14,7 @@ const LoginComponent = () => {
                                 <div className="card-3d-wrapper">
                                     <div className="card-front">
                                         <div className="center-wrap">
-                                            <div className="section text-center">
+                                            <div className="text-center">
                                                 <h4 className="mb-4 pb-3">Log In</h4>
                                                 <div className="form-group">
                                                     <input type="email" name="wd-login-email" className="form-style"
@@ -34,7 +34,7 @@ const LoginComponent = () => {
                                     </div>
                                     <div className="card-back">
                                         <div className="center-wrap">
-                                            <div className="section text-center">
+                                            <div className="text-center">
                                                 <h4 className="mb-4 pb-3">Sign Up</h4>
                                                 <div className="form-group">
                                                     <input type="text" name="logname" className="form-style"
