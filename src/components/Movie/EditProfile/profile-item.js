@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import NavigationBar from "./navigation_bar";
 
 
 const EditProfListItem = ({prof={
@@ -13,71 +14,46 @@ const EditProfListItem = ({prof={
 
     return (
         <div>
-            <h1>Account Settings</h1>
+            <NavigationBar/>
 
             <br/>
 
-            <div className="container">
-                <div className="row">
-                    <div className="col-2">
-                        <Link to="/movie/profile" style={{"text-decoration":"none"}}>PROFILE</Link>
-                    </div>
-                    <div className="col-2">
-                        <Link to="/movie/profile" style={{"text-decoration":"none", "color":"green"}}>AVATAR</Link>
-                    </div>
-                    <div className="col-2">
-                        <Link to="/movie/profile" style={{"text-decoration":"none", "color":"green"}}>CONNECTIONS</Link>
-                    </div>
-                    <div className="col-2">
-                        <Link to="/movie/profile" style={{"text-decoration":"none", "color":"green"}}>NOTIFICATIONS</Link>
-                    </div>
-                    <div className="col-2">
-                        <Link to="/movie/profile" style={{"text-decoration":"none", "color":"green"}}>STORES & STREAMING</Link>
-                    </div>
-                    <div className="col-2">
-                        <Link to="/movie/profile" style={{"text-decoration":"none", "color":"green"}}>IMPORT & EXPORT</Link>
-                    </div>
-                </div>
-            </div>
-
-            <br/>
-
-            <h3 style={{"padding-right":"50px"}}>Profile Settings</h3>
+            <h3 style={{"padding-left":"50px", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>Profile Settings</h3>
 
             <div className="container">
                 <div className="row">
                     <div className="col-6">
                         <div className="container">
                                 Name: <br/>
-                                <input type="text" placeholder="Superman" style={{"width":"90%", "background-color":"grey"}}/>
+                                <input type="text" placeholder="Superman" style={{"width":"90%", "background-color":"#445566"}}/>
                             <br/><br/>
                             <div className="row">
                                 <div className="col-6">
                                     GivenName: <br/>
-                                    <input type="text" style={{"background-color":"grey"}}/>
+                                    <input type="text" style={{"background-color":"#445566"}}/>
                                 </div>
                                 <div className="col-6">
                                     FamilyName: <br/>
-                                    <input type="text" style={{"background-color":"grey"}}/>
+                                    <input type="text" style={{"background-color":"#445566"}}/>
                                 </div>
                             </div>
                             <br/>
                             Email Address: <br/>
-                            <input type="text" placeholder="superman@mail.com" style={{"width":"90%", "background-color":"grey"}}/>
+                            <input type="text" placeholder="superman@mail.com" style={{"width":"90%", "background-color":"#445566"}}/>
                             <br/><br/>
                             <div className="row">
                                 <div className="col-6">
                                     Location: <br/>
-                                    <input type="text" style={{"background-color":"grey"}}/>
+                                    <input type="text" style={{"background-color":"#445566"}}/>
                                 </div>
                                 <div className="col-6">
                                     Website: <br/>
-                                    <input type="text" style={{"background-color":"grey"}}/>
+                                    <input type="text" style={{"background-color":"#445566"}}/>
                                 </div>
                             </div>
                             <br/>
                             Bio: <br/>
-                            <input type="text" style={{"width":"90%", "height":"200px", "background-color":"grey"}}/>
+                            <input type="text" style={{"width":"90%", "height":"200px", "background-color":"#445566"}}/>
                             <br/> <br/>
                             <div className="row">
                                 <div className="col-6">
@@ -94,24 +70,28 @@ const EditProfListItem = ({prof={
 
 
                     <div className="col-6">
-                        <h3>Favourite Films</h3>
+                        <h3 style={{"font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>Favourite Films</h3>
                         <div className="container">
                             <div className="row">
-                                <div className="col-3" style={{"border-style":"solid", "border-color":"green", "height":"200px", "background-color":"grey"}}>
-                                    <br/><br/><br/>
-                                    <button type="button" style={{"background-color":"green", "border-radius":"50%"}}>+</button>
+                                <div className="col-3" style={{"border-style":"solid", "border-color":"#445566", "height":"200px", "background-color":"grey", "position":"relative"}}>
+                                    <div style={{"position":"absolute", "padding-top":"77px", "padding-left":"47px", "height":"30px", "weight":"30px"}}>
+                                        <button type="button" style={{"background-color":"#445566", "border-radius":"70%"}}>+</button>
+                                    </div>
                                 </div>
-                                <div className="col-3" style={{"border-style":"solid", "border-color":"green", "height":"200px", "background-color":"grey"}}>
-                                    <br/><br/><br/>
-                                    <button type="button" style={{"background-color":"green", "border-radius":"50%"}}>+</button>
+                                <div className="col-3" style={{"border-style":"solid", "border-color":"#445566", "height":"200px", "background-color":"grey"}}>
+                                    <div style={{"position":"absolute", "padding-top":"77px", "padding-left":"47px"}}>
+                                        <button type="button" style={{"background-color":"#445566", "border-radius":"50%"}}>+</button>
+                                    </div>
                                 </div>
-                                <div className="col-3" style={{"border-style":"solid", "border-color":"green", "height":"200px", "background-color":"grey"}}>
-                                    <br/><br/><br/>
-                                    <button type="button" style={{"background-color":"green", "border-radius":"50%"}}>+</button>
+                                <div className="col-3" style={{"border-style":"solid", "border-color":"#445566", "height":"200px", "background-color":"grey"}}>
+                                    <div style={{"position":"absolute", "padding-top":"77px", "padding-left":"47px"}}>
+                                        <button type="button" style={{"background-color":"#445566", "border-radius":"50%"}}>+</button>
+                                    </div>
                                 </div>
-                                <div className="col-3" style={{"border-style":"solid", "border-color":"green", "height":"200px", "background-color":"grey"}}>
-                                    <br/><br/><br/>
-                                    <button type="button" style={{"background-color":"green", "border-radius":"50%"}}>+</button>
+                                <div className="col-3" style={{"border-style":"solid", "border-color":"#445566", "height":"200px", "background-color":"grey"}}>
+                                    <div style={{"position":"absolute", "padding-top":"77px", "padding-left":"47px"}}>
+                                        <button type="button" style={{"background-color":"#445566", "border-radius":"50%"}}>+</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

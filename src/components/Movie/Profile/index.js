@@ -6,7 +6,6 @@ import ProfileList from './profile';
 const ProfileScreen = () => {
     return(
         <div>
-            <h2>Personal Profile</h2>
 
             <div>
                 <ProfileList/>

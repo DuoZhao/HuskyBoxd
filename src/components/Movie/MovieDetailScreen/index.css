@@ -1,34 +1,34 @@
-img {
-    width: 230px;
-    height: 345px;
-    border-radius: 10px;
-}
+/*img {*/
+/*    width: 230px;*/
+/*    height: 345px;*/
+/*    border-radius: 10px;*/
+/*}*/
 
-h1 {
-    font-family: TiemposHeadlineWeb-Bold,Georgia,serif;
-    font-size: 2.46153846rem;
-    font-weight: bolder;
-    display: inline;
-}
+/*h1 {*/
+/*    font-family: TiemposHeadlineWeb-Bold,Georgia,serif;*/
+/*    font-size: 2.46153846rem;*/
+/*    font-weight: bolder;*/
+/*    display: inline;*/
+/*}*/
 
-h4 {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    display: inline;
-}
+/*h4 {*/
+/*    font-size: 1.2rem;*/
+/*    font-weight: lighter;*/
+/*    display: inline;*/
+/*}*/
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 1.1rem;
-    font-family: TiemposHeadlineWeb-Bold,Georgia,serif;
-}
+/*p {*/
+/*    display: block;*/
+/*    margin-block-start: 1em;*/
+/*    margin-block-end: 1em;*/
+/*    margin-inline-start: 0px;*/
+/*    margin-inline-end: 0px;*/
+/*    font-size: 1.1rem;*/
+/*    font-family: TiemposHeadlineWeb-Bold,Georgia,serif;*/
+/*}*/
 
-#wd-detail-container {
-    background: linear-gradient(to bottom, transparent, 80%, black), url("dune-back.jpeg");
-    padding-top: 500px;
-    position: relative;
-}
+/*#wd-detail-container {*/
+/*    background: linear-gradient(to bottom, transparent, 80%, black), url("dune-back.jpeg");*/
+/*    padding-top: 500px;*/
+/*    position: relative;*/
+/*}*/

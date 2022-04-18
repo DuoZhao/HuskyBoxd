@@ -1,4 +1,4 @@
-
+import {provider} from 'react-redux'
 import React, {useEffect, useState} from "react";
 import SearchItem from "../Search-Screen/search-item";
 import {useDispatch, useSelector}

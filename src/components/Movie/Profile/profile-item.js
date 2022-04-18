@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const ProfListItem = ({prof={
         "firstName": "Zhengyan", "lastName": "Mr.", "handle": "Code Elite",
-        "profilePicture": "../pictures/peaky_blinder.jpg",     "bannerPicture": "../pictures/batman_banner.webp",
+        "profilePicture": "../pictures/peaky_blinder.jpg",     "bannerPicture": "../pictures/horse.jpg",
         "bio": "Student, Data Scientist, Algorithm Engineer",
         "website": "youtube.com/webdevtv",
         "location": "Boston, MA",    "dateOfBirth": "3/1998",    "dateJoined": "12/2020",
@@ -13,12 +13,11 @@ const ProfListItem = ({prof={
     return (
         <div>
 
-
             <div style={{"height":"400px"}}>
-                <img src={prof.bannerPicture}  height="450px" width="100%"/>
+                <img src={prof.bannerPicture}  height="550px" width="100%"/>
             </div>
 
-            <div style={{"padding-top": "20px", "padding-left": "100px", "position":"relative"}}>
+            <div style={{"padding-top": "50px", "padding-left": "100px", "position":"relative"}}>
                 <img src={prof.profilePicture} height="100px" width="100px" style={{"border-radius": "50%", "float": "left"}}/>
 
                 <span style={{"height":"50px", "padding-left": "40px"}}>
@@ -33,57 +32,55 @@ const ProfListItem = ({prof={
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
                     <strong style={{"color":"white"}}>{prof.films}</strong>
                     <br/>
-                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none"}}>FILMS</Link>
+                    <Link to="/huskyboxd/profile-films" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>FILMS</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
                     <strong style={{"color":"white"}}>{prof.thisyear}</strong>
                     <br/>
-                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none"}}>THIS YEAR</Link>
+                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>THIS YEAR</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
                     <strong style={{"color":"white"}}>{prof.lists}</strong>
                     <br/>
-                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none"}}>LISTS</Link>
+                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>LISTS</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
                     <strong style={{"color":"white"}}>{prof.followingCount}</strong>
                     <br/>
-                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none"}}>FOLLOWING</Link>
+                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>FOLLOWING</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px"}}>
                     <strong style={{"color":"white"}}>{prof.followersCount}</strong>
                     <br/>
-                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none"}}>FOLLOWERS</Link>
+                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>FOLLOWERS</Link>
                     </div>
 
 
                 </div>
 
-
             </div>
-
 
             <br/>
 
             <div className="container" style={{"border-style":"solid", "border-color":"grey"}}>
                 <div className="row">
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Profile</strong></Link>
+                        <Link to="/huskyboxd/profile"  style={{"color":"white", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif", "font-size":"20px"}}><strong>Profile</strong></Link>
                     </div>
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Films</strong></Link>
+                        <Link to="/huskyboxd/profile-films" style={{"color":"white", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif", "font-size":"20px"}}><strong>Films</strong></Link>
                     </div>
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Likes</strong></Link>
+                        <Link to="/huskyboxd/profile" style={{"color":"white", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif", "font-size":"20px"}}><strong>Likes</strong></Link>
                     </div>
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Tags</strong></Link>
+                        <Link to="/huskyboxd/profile" style={{"color":"white", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif", "font-size":"20px"}}><strong>Tags</strong></Link>
                     </div>
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Stats</strong></Link>
+                        <Link to="/huskyboxd/stat" style={{"color":"white", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif", "font-size":"20px"}}><strong>Stats</strong></Link>
                     </div>
                     <div className="col-2" style={{"padding-left": "10px", "padding-right": "60px"}}>
-                        <Link to="/movie/profile" style={{"color":"white", "text-decoration":"none"}}><strong>Network</strong></Link>
+                        <Link to="/huskyboxd/profile" style={{"color":"white", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif", "font-size":"20px"}}><strong>Network</strong></Link>
                     </div>
                 </div>
             </div>
@@ -150,16 +147,14 @@ const ProfListItem = ({prof={
                     </div>
                 </div>
 
-
             </div>
-
 
             <br/> <br/> <br/>
 
         </div>
 
-
     );
 }
+
 
 export default ProfListItem;
