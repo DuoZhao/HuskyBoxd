@@ -1,0 +1,41 @@
+
+
+/*.wd-component-poster {*/
+/*    border: 1px solid #00e054;*/
+/*    width: 74px;*/
+/*    height: 109px;*/
+/*    border-radius: 10px;*/
+/*}*/
+
+.wd-text {
+    font-family: TiemposHeadlineWeb-Bold,Georgia,serif;
+    color: white;
+    font-size: 21px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.wd-time {
+    color: #9ab;
+    font-family: Graphik-Regular-Web,sans-serif;
+    font-size: 17.5px;
+    font-weight: 400;
+}
+.wd-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.wd-comment {
+    margin-bottom: 10px;
+}
+
+.wd-text-color {
+    color: #89a;
+}
+
+.wd-divider {
+    border-bottom: 1px solid #456;
+}
+
