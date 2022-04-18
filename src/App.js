@@ -7,16 +7,16 @@ import './vendors/fontawesome-free-5.15.4-web/css/fontawesome.css';
 import './vendors/fontawesome-free-5.15.4-web/css/fontawesome.min.css';
 import './vendors/fontawesome-free-6.1.0-web/css/all.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Movie from "./components/Movie";
-import ProfileScreen from "./components/Movie/Profile/index";
-import EditProfileScreen from "./components/Movie/EditProfile/index";
-import Stat from "./components/Movie/Profile/stat.js";
-import ProfileFilmsList from "./components/Movie/Profile/films-list.js";
-import Stores_Streaming from "./components/Movie/EditProfile/stores_streaming.js";
-import Import_Export from "./components/Movie/EditProfile/import_export.js";
-import SearchScreen from "./components/Movie/Search-Screen/index";
-import LoginScreen from "./components/Movie/LoginScreen/LoginScreen";
-import MovieDetailScreen from "./components/Movie/MovieDetailScreen/MovieDetailScreen";
+import Movie from "./components/HuskyBoxd";
+import ProfileScreen from "./components/HuskyBoxd/Profile/index";
+import EditProfileScreen from "./components/HuskyBoxd/EditProfile/index";
+import Stat from "./components/HuskyBoxd/Profile/stat.js";
+import ProfileFilmsList from "./components/HuskyBoxd/Profile/films-list.js";
+import Stores_Streaming from "./components/HuskyBoxd/EditProfile/stores_streaming.js";
+import Import_Export from "./components/HuskyBoxd/EditProfile/import_export.js";
+import SearchScreen from "./components/HuskyBoxd/Search-Screen/index";
+import LoginScreen from "./components/HuskyBoxd/LoginScreen/LoginScreen";
+import MovieDetailScreen from "./components/HuskyBoxd/MovieDetailScreen/MovieDetailScreen";
 
 function App() {
     return (
