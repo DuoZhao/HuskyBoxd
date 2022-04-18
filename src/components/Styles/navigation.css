@@ -108,6 +108,12 @@
     color: white;
     cursor: pointer;
 }
+
+.wd-menu-avatar {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+}
 /*search part*/
 .wd-search{
     width: 140px;
@@ -148,6 +154,7 @@ i.fas.fa-search {
 }
 
 .wd-welcome-message h2 {
+    color: #abc;
     font-size: 26px;
     font-weight: normal;
     text-align: center;

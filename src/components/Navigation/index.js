@@ -6,7 +6,7 @@ import "./index.css"
 import "../Styles/navigation.css"
 const Navigation = (
     {
-        login = false
+        login = true
     }) => {
     return (
         <>
@@ -48,9 +48,8 @@ const Navigation = (
                                 }
                                 {
                                     login && <ul className="wd-menu-ul">
-                                       <l1 className = "wd-menu-li">
-                                           JOJO
-                                       </l1>
+                                        <li className="wd-menu-li">Home</li>
+                                        <li className="wd-menu-li">Profile</li>
                                         <li className="wd-menu-li">FILMS</li>
                                         <li className="wd-menu-li">LISTS</li>
                                     </ul>
@@ -68,7 +67,7 @@ const Navigation = (
             {/*login homepage 2*/}
             {
                 login && <div className="wd-welcome-message">
-                    <h2>Welcome back, <span>JoJo</span>. Here's what your friends have been watching...</h2>
+                    <h2>Welcome back, <span>JoJo</span>. Here’s what we’ve been watching…...</h2>
                 </div>
             }
 
