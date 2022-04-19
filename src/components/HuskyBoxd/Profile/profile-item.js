@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import "../Styles/card.css";
 
 const ProfListItem = ({prof={
         "firstName": "Zhengyan", "lastName": "Mr.", "handle": "Code Elite",
@@ -11,7 +12,7 @@ const ProfListItem = ({prof={
 }})=> {
 
     return (
-        <div>
+        <div style={{backgroundColor: "rgba(20,24,28,255)"}}>
 
             <div style={{"height":"400px"}}>
                 <img src={prof.bannerPicture}  height="550px" width="100%"/>
@@ -86,65 +87,107 @@ const ProfListItem = ({prof={
             </div>
 
 
-            <br/>
+            <br/><br/>
 
             <div className="container">
                 <div className="row">
                     <text>Favourite Movies</text>
                 </div>
-                <div className="row" style={{"width":"100%", "border-style":"solid", "border-width":"thin", "border-color":"white", "border-left":"none", "border-right":"none", "border-bottom":"none"}}>
-                    <div className="col-3">
-                        <Link to="/movie/profile">
-                            <img src="../pictures/incredibles.jpg" height="350px" width="250px" style={{"padding-top":"15px"}}/>
-                        </Link>
-                        </div>
-                    <div className="col-3" >
-                        <Link to="/movie/profile">
-                        <img src="../pictures/zootopia.webp" height="350px" width="250px" style={{"padding-top":"15px"}} />
-                        </Link>
+
+                <div style={{"width":"100%", "border-style":"solid", "border-width":"thin", "border-color":"white", "border-left":"none", "border-right":"none", "border-bottom":"none"}}>
+                </div>
+
+                <div className="wd-favoritefilms-list">
+                <div className="wd-favoritefilms  col-3">
+                    <a href="/">
+                        <img src="../pictures/incredibles.jpg" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                    </a>
+                    <div className="wd-cover-img">
+                        <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                        <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
                     </div>
-                    <div className="col-3" >
-                        <Link to="/movie/profile">
-                        <img src="../pictures/coco.webp" height="350px" width="250px" style={{"padding-top":"15px"}} />
-                        </Link>
+                </div>
+                <div className="wd-favoritefilms  col-3">
+                    <a href="/">
+                        <img src="../pictures/zootopia.webp" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                    </a>
+                    <div className="wd-cover-img">
+                        <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                        <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
                     </div>
-                    <div className="col-3" >
-                        <Link to="/movie/profile">
-                        <img src="../pictures/Your_name_poster.jpg" height="350px" width="250px" style={{"padding-top":"15px"}} />
-                        </Link>
+                </div>
+                <div className="wd-favoritefilms col-3">
+                    <a href="/">
+                        <img src="../pictures/coco.webp" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                    </a>
+                    <div className="wd-cover-img">
+                        <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                        <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
                     </div>
+                </div>
+                <div className="wd-favoritefilms  col-3">
+                    <a href="/">
+                        <img src="../pictures/Your_name_poster.jpg" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                    </a>
+                    <div className="wd-cover-img">
+                        <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                        <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                    </div>
+                </div>
+
                 </div>
 
 
             </div>
 
-            <br/> <br/> <br/>
+            <br/>
 
             <div className="container">
                 <div className="row">
                     <text>Recent Activities</text>
                 </div>
-                <div className="row"  style={{"width":"100%", "border-style":"solid", "border-width":"thin", "border-color":"white", "border-left":"none", "border-right":"none", "border-bottom":"none"}}>
-                    <div className="col-3">
-                        <Link  to="/movie/profile">
-                        <img src="../pictures/readyplayerone.jpg" height="350px" width="250px" style={{"padding-top":"15px"}} />
-                        </Link>
+
+                <div style={{"width":"100%", "border-style":"solid", "border-width":"thin", "border-color":"white", "border-left":"none", "border-right":"none", "border-bottom":"none"}}>
+                </div>
+
+                <div className="wd-favoritefilms-list">
+                    <div className="wd-favoritefilms  col-3">
+                        <a href="/">
+                            <img src="../pictures/readyplayerone.jpg" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                    <div className="col-3" >
-                        <Link  to="/movie/profile">
-                        <img src="../pictures/Transformers5.jpg" height="350px" width="250px" style={{"padding-top":"15px"}} />
-                        </Link>
+                    <div className="wd-favoritefilms  col-3">
+                        <a href="/">
+                            <img src="../pictures/Transformers5.jpg" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                    <div className="col-3" >
-                        <Link  to="/movie/profile">
-                        <img src="../pictures/interstellar.jpg" height="350px" width="250px" style={{"padding-top":"15px"}} />
-                        </Link>
+                    <div className="wd-favoritefilms col-3">
+                        <a href="/">
+                            <img src="../pictures/interstellar.jpg" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                    <div className="col-3" >
-                        <Link  to="/movie/profile">
-                        <img src="../pictures/bighero6.jpeg" height="350px" width="250px" style={{"padding-top":"15px"}} />
-                        </Link>
+                    <div className="wd-favoritefilms  col-3">
+                        <a href="/">
+                            <img src="../pictures/bighero6.jpeg" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
+
                 </div>
 
             </div>

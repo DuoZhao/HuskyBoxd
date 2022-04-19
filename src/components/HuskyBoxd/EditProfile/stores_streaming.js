@@ -6,7 +6,7 @@ import NavigationBar from "./navigation_bar";
 const Stores_Streaming = ()=> {
 
     return (
-        <div>
+        <div   style={{backgroundColor: "rgba(20,24,28,255)"}}>
 
             <NavigationBar/>
 
@@ -98,7 +98,7 @@ const Stores_Streaming = ()=> {
                 </div>
             </div>
 
-
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
         </div>
 

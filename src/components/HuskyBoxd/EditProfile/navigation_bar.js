@@ -12,7 +12,7 @@ const NavigationBar = ({prof={
 }})=> {
 
     return (
-        <div>
+        <div   style={{backgroundColor: "rgba(20,24,28,255)"}}>
             <h1 style={{"font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>Account Settings</h1>
 
             <br/>

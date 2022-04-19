@@ -4,6 +4,8 @@ import FilmsItem from "./films-item";
 import {useDispatch, useSelector}
     from "react-redux";
 import {Link} from "react-router-dom";
+import "./index.css"
+import "../Styles/card.css"
 
 const FilmsList = ({prof={
     "firstName": "Zhengyan", "lastName": "Mr.", "profilePicture":"../pictures/peaky_blinder.jpg",
@@ -108,13 +110,14 @@ const FilmsList = ({prof={
                     <br/>
                 </div>
 
-                <ul className="ttr-tuits list-group">
+                <ul className="ttr-tuits list-group wd-profilefilms-list">
                     {
 
                         FilmsReducer.map && FilmsReducer.map(prof =>
                             <>
                                 <FilmsItem key={prof._id}
                                           prof={prof}/>
+                                <br/>
                             </>)
                     }
                 </ul>

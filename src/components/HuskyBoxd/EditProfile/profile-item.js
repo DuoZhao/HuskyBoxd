@@ -13,7 +13,7 @@ const EditProfListItem = ({prof={
 }})=> {
 
     return (
-        <div>
+        <div   style={{backgroundColor: "rgba(20,24,28,255)"}}>
             <NavigationBar/>
 
             <br/>

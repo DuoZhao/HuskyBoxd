@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import "../Styles/card.css";
 
 const Films = ({prof={
     "_id":"123",
@@ -16,41 +17,125 @@ const Films = ({prof={
 
             <div className="container">
                 <div className="row">
-                    <div className="col-1">
-                        <img src={prof.film1} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film1} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film2} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film2} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>34,612 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>155 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film3} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film3} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>71,089 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>20 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film4} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film4} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film5} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film5} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>34,612 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>155 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film6} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film6} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>71,089 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>20 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film7} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film7} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film8} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film8} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>34,612 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>155 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film9} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film9} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>71,089 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>20 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film10} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film10} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film11} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film11} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>34,612 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>155 </p>
+                        </div>
                     </div>
-                    <div className="col-1">
-                        <img src={prof.film12} style={{"width":"100%"}}/>
+
+                    <div className="wd-profilefilms col-1">
+                        <a href="/">
+                            <img src={prof.film12} className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>71,089 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>20 </p>
+                        </div>
                     </div>
                 </div>
             </div>

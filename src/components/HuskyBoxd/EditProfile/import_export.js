@@ -6,7 +6,7 @@ import NavigationBar from "./navigation_bar";
 const Import_Export = ()=> {
 
     return (
-        <div>
+        <div   style={{backgroundColor: "rgba(20,24,28,255)", "height":"100%"}}>
 
             <NavigationBar/>
 
@@ -47,6 +47,7 @@ const Import_Export = ()=> {
                 </div>
             </div>
 
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
         </div>
