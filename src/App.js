@@ -8,7 +8,9 @@ import './vendors/fontawesome-free-5.15.4-web/css/fontawesome.min.css';
 import './vendors/fontawesome-free-6.1.0-web/css/all.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Movie from "./components/HuskyBoxd";
+
 import HuskyBoxd from "./components/HuskyBoxd";
+import HomeScreen from "./components/HuskyBoxd/HomeScreen";
 import ProfileScreen from "./components/HuskyBoxd/Profile/index";
 import EditProfileScreen from "./components/HuskyBoxd/EditProfile/index";
 import Stat from "./components/HuskyBoxd/Profile/stat.js";
@@ -33,7 +35,7 @@ function App() {
                     <Route path="import_export" element={<Import_Export/>}/>
                     <Route path="stat" element={<Stat/>}/>
                     <Route path="search" element={<SearchScreen/>}/>
-                    <Route path="" element={<HuskyBoxd/>}/>
+                    <Route path="home" element={<HomeScreen/>}/>
                 </Route>
             </Routes>
         </BrowserRouter>
