@@ -1,6 +1,6 @@
 
 import React, {useEffect, useState} from "react";
-import SearchItem from "../Search-Screen/search-item";
+import SearchItem from "../search-screen/search-item";
 import {useDispatch, useSelector}
     from "react-redux";
 import SearchReducer from "../reducers/search-reducer";
@@ -41,12 +41,12 @@ const SearchList = () => {
                             <div className="list-group" style={{"background-color": "#1e2125", "width":"70%"}}>
 
                                 <Link className="list-group-item"
-                                      to="/movie/profile" style={{"background-color": "#1e2125", "color": "brown"}}>
+                                      to="/huskyboxd/profile" style={{"background-color": "#1e2125", "color": "brown"}}>
                                     <div className="d-none d-xxl-inline d-xl-inline">All</div>
                                 </Link >
 
                                 <Link className="list-group-item"
-                                      to="/movie/profile"  style={{"background-color": "#1e2125", "color": "white"}} onclick="SomeJavaScriptCode">
+                                      to="/huskyboxd/profile"  style={{"background-color": "#1e2125", "color": "white"}} onclick="SomeJavaScriptCode">
                                     <div className="d-none d-xxl-inline d-xl-inline">Films</div>
                                 </Link >
 
@@ -71,7 +71,7 @@ const SearchList = () => {
                                 </a >
 
                                 <Link className="list-group-item"
-                                      to="/movie/profile" style={{"background-color": "#1e2125", "color": "white"}}>
+                                      to="/huskyboxd/profile" style={{"background-color": "#1e2125", "color": "white"}}>
                                     <span className="d-none d-xxl-inline d-xl-inline">Journal articles</span>
                                 </Link >
 
