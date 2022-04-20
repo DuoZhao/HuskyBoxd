@@ -29,6 +29,7 @@ function App() {
                     <Route path="profile" element={<ProfileScreen/>}/>
                     <Route path="login" element={<LoginScreen/>}/>
                     <Route path="detail" element={<MovieDetailScreen/>}/>
+                    <Route path="detail/:movieId" element={<MovieDetailScreen/>}/>
                     <Route path="editprofile" element={<EditProfileScreen/>}/>
                     <Route path="profile-films" element={<ProfileFilmsList/>}/>
                     <Route path="stores_streaming" element={<Stores_Streaming/>}/>

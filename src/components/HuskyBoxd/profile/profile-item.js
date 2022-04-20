@@ -3,11 +3,11 @@ import {Link} from "react-router-dom";
 import "../Styles/card.css";
 
 const ProfListItem = ({prof={
-        "firstName": "Zhengyan", "lastName": "Mr.", "handle": "Code Elite",
-        "profilePicture": "../pictures/peaky_blinder.jpg",     "bannerPicture": "../pictures/horse.jpg",
-        "bio": "Student, Data Scientist, Algorithm Engineer",
-        "website": "youtube.com/webdevtv",
-        "location": "Boston, MA",    "dateOfBirth": "3/1998",    "dateJoined": "12/2020",
+    "firstName": "Zhengyan", "lastName": "Mr.", "handle": "Code Elite",
+    "profilePicture": "../pictures/peaky_blinder.jpg",     "bannerPicture": "../pictures/horse.jpg",
+    "bio": "Student, Data Scientist, Algorithm Engineer",
+    "website": "youtube.com/webdevtv",
+    "location": "Boston, MA",    "dateOfBirth": "3/1998",    "dateJoined": "12/2020",
     "films": 1638, "thisyear": 57, "lists": 12,   "followingCount": 666,    "followersCount": 0
 }})=> {
 
@@ -31,29 +31,29 @@ const ProfListItem = ({prof={
                 <div className="row" style={{"width":"90%", "padding-left":"450px"}}>
 
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
-                    <strong style={{"color":"white"}}>{prof.films}</strong>
-                    <br/>
-                    <Link to="/huskyboxd/profile-films" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>FILMS</Link>
+                        <strong style={{"color":"white"}}>{prof.films}</strong>
+                        <br/>
+                        <Link to="/huskyboxd/profile-films" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>FILMS</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
-                    <strong style={{"color":"white"}}>{prof.thisyear}</strong>
-                    <br/>
-                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>THIS YEAR</Link>
+                        <strong style={{"color":"white"}}>{prof.thisyear}</strong>
+                        <br/>
+                        <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>THIS YEAR</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
-                    <strong style={{"color":"white"}}>{prof.lists}</strong>
-                    <br/>
-                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>LISTS</Link>
+                        <strong style={{"color":"white"}}>{prof.lists}</strong>
+                        <br/>
+                        <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>LISTS</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px", "border-style":"dotted", "border-color":"grey", "border-top":"none","border-left":"none", "border-bottom":"none"}}>
-                    <strong style={{"color":"white"}}>{prof.followingCount}</strong>
-                    <br/>
-                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>FOLLOWING</Link>
+                        <strong style={{"color":"white"}}>{prof.followingCount}</strong>
+                        <br/>
+                        <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>FOLLOWING</Link>
                     </div>
                     <div className="col-1 col-lg-1 col-xl-2" style={{"color": "white", "padding-left":"10px", "padding-rightt":"10px"}}>
-                    <strong style={{"color":"white"}}>{prof.followersCount}</strong>
-                    <br/>
-                    <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>FOLLOWERS</Link>
+                        <strong style={{"color":"white"}}>{prof.followersCount}</strong>
+                        <br/>
+                        <Link to="/movie/profile" style={{"color":"white", "background-color":"black", "text-decoration":"none", "font-family": "TiemposHeadlineWeb-Bold,Georgia,serif"}}>FOLLOWERS</Link>
                     </div>
 
 
@@ -98,42 +98,42 @@ const ProfListItem = ({prof={
                 </div>
 
                 <div className="wd-favoritefilms-list">
-                <div className="wd-favoritefilms  col-3">
-                    <a href="/">
-                        <img src="../pictures/incredibles.jpg" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
-                    </a>
-                    <div className="wd-cover-img">
-                        <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
-                        <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                    <div className="wd-favoritefilms  col-3">
+                        <a href="/">
+                            <img src="../pictures/incredibles.jpg" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                </div>
-                <div className="wd-favoritefilms  col-3">
-                    <a href="/">
-                        <img src="../pictures/zootopia.webp" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
-                    </a>
-                    <div className="wd-cover-img">
-                        <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
-                        <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                    <div className="wd-favoritefilms  col-3">
+                        <a href="/">
+                            <img src="../pictures/zootopia.webp" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                </div>
-                <div className="wd-favoritefilms col-3">
-                    <a href="/">
-                        <img src="../pictures/coco.webp" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
-                    </a>
-                    <div className="wd-cover-img">
-                        <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
-                        <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                    <div className="wd-favoritefilms col-3">
+                        <a href="/">
+                            <img src="../pictures/coco.webp" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                </div>
-                <div className="wd-favoritefilms  col-3">
-                    <a href="/">
-                        <img src="../pictures/Your_name_poster.jpg" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
-                    </a>
-                    <div className="wd-cover-img">
-                        <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
-                        <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                    <div className="wd-favoritefilms  col-3">
+                        <a href="/">
+                            <img src="../pictures/Your_name_poster.jpg" className="wd-img" alt="movie name" style={{"width":"100%"}}/>
+                        </a>
+                        <div className="wd-cover-img">
+                            <i className="fas fa-eye" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>3,015 </p>
+                            <i className="fas fa-heart" style={{"font-size":"20px"}}/> <p style={{"font-size":"20px"}}>724 </p>
+                        </div>
                     </div>
-                </div>
 
                 </div>
 
