@@ -9,6 +9,7 @@ const MovieDetailScreen = () => {
     const movie = useSelector(state => state.movie);
     const dispatch = useDispatch();
     useEffect(() => findMovieByID(dispatch, movieId, true), []);
+
     return(
         <>
             <MovieDetailComponent movie={movie}/>
