@@ -1,11 +1,15 @@
 import React from "react";
 import "../Styles/homepage.css"
+import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
+import {useDispatch} from "react-redux";
 
 const HomeComponents = (
     {
         login = false
     }
 ) => {
+
     return (
         <>
             {
@@ -22,9 +26,9 @@ const HomeComponents = (
                     </h2>
                 </div>
                 <div className="button">
-                    <a href="#">
+                    <Link to="/huskyboxd/login">
                         Get started — it‘s free!
-                    </a>
+                    </Link>
                 </div>
                 <div className="wd-note">
                     <p>
@@ -37,7 +41,9 @@ const HomeComponents = (
         </div>
             }
             {
-                login
+                login && <div className="wd-welcome-message">
+                    <h2>Welcome back, <span>JoJo</span>. Here’s what we’ve been watching...</h2>
+                </div>
             }
         </>
     );
