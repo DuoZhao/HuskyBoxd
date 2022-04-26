@@ -136,16 +136,31 @@
     outline: none;
     appearance: none;
 }
-/*.wd-search input:hover{*/
-/*    background-color: rgba(253, 253, 253, 0.829);*/
-/*}*/
-i.fas.fa-search {
+.wd-search input:hover{
+    background-color: gray;
+    /*background-color: rgba(253, 253, 253, 0.829);*/
+}
+.wd-search button {
+    background: none;
+    border: none;
     position: absolute;
-    right: 15px;
-    bottom: 9px;
+    right: 8px;
+    bottom: 8px;
     color: white;
     font-size: 10px;
 }
+
+.wd-search button:hover {
+    color: gray;
+}
+
+/*i.fas.fa-search {*/
+/*    position: absolute;*/
+/*    right: 15px;*/
+/*    bottom: 9px;*/
+/*    color: white;*/
+/*    font-size: 10px;*/
+/*}*/
 
 
 /* Login Message*/

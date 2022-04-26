@@ -6,18 +6,20 @@ import Comments from "../Comments";
 import PopularList from "../PopularList";
 
 
-const HomeScreen = () => {
+const HomeScreen = ({
+    login = true
+                    }) => {
 
     return (
         <>
         <div style={ {backgroundColor: "rgba(20,24,28,255)"}}>
 
             <div className="row">
-                <Navigation/>
+                <Navigation login={login}/>
             </div>
 
             <div className="row mt-auto">
-                <HomeComponents/>
+                <HomeComponents login={login}/>
             </div>
 
             <div className="row mt-1">

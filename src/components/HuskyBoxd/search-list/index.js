@@ -6,12 +6,10 @@ import {useDispatch, useSelector}
 import SearchReducer from "../reducers/search-reducer";
 import {Link} from "react-router-dom";
 
-const SearchList = () => {
+const SearchList = (movies) => {
     const SearchReducer
         = useSelector(state => state.SearchReducer);
     const dispatch = useDispatch();
-
-
 
     return (
 
@@ -25,11 +23,14 @@ const SearchList = () => {
                         <ul className="ttr-tuits list-group">
                             {
 
-                                SearchReducer.map && SearchReducer.map(prof =>
-                                    <>
-                                        <SearchItem key={prof._id}
-                                                    prof={prof}/>
-                                    </>)
+                                // SearchReducer.map &&
+                                movies.map(movie =>
+
+                                    <li>
+                                        <SearchItem key={movie.imdbID}
+                                                    prof={movie}/>
+                                    </li>
+                                )
                             }
                         </ul>
                     </div>

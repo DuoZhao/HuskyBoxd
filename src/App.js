@@ -35,7 +35,10 @@ function App() {
                     <Route path="stores_streaming" element={<Stores_Streaming/>}/>
                     <Route path="import_export" element={<Import_Export/>}/>
                     <Route path="stat" element={<Stat/>}/>
+
                     <Route path="search" element={<SearchScreen/>}/>
+                    <Route path="search/:movieSearch" element={<SearchScreen/>}/>
+
                     <Route path="home" element={<HomeScreen/>}/>
                 </Route>
             </Routes>
