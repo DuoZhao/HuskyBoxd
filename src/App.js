@@ -20,9 +20,11 @@ import Import_Export from "./components/HuskyBoxd/EditProfile/import_export.js";
 import SearchScreen from "./components/HuskyBoxd/Search-Screen/index";
 import LoginScreen from "./components/HuskyBoxd/LoginScreen/LoginScreen";
 import MovieDetailScreen from "./components/HuskyBoxd/MovieDetailScreen/MovieDetailScreen";
+import {ProfileProvider} from "./components/HuskyBoxd/contexts/profile-context";
 
 function App() {
     return (
+        <ProfileProvider>
         <BrowserRouter>
             <Routes>
                 <Route path="/huskyboxd" element={<Movie/>}>
@@ -40,6 +42,7 @@ function App() {
                 </Route>
             </Routes>
         </BrowserRouter>
+        </ProfileProvider>
     );
 }
 export default App;

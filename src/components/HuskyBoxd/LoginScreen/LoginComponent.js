@@ -1,32 +1,33 @@
 import "./index.css";
-import {createUser, findUserByCredentials} from "../actions/login-actions";
-import {useRef, useState} from "react";
+import {useRef} from "react";
 import {useNavigate} from "react-router-dom";
-import {useDispatch} from "react-redux";
-
+import {useProfile} from "../contexts/profile-context.js";
 const LoginComponent = () => {
-    const dispatch = useDispatch();
     const navigate = useNavigate();
-    const create = () => {
-        const user = {username: '', email: '', password: ''};
-        user.username = signupUserName.current.value;
-        user.email = signupEmail.current.value;
-        user.password = signupPassword.current.value;
-        if (user.email.length === 0 || user.username.length === 0 || user.password.length === 0) {
-            navigate("/huskyboxd/login");
+    const {signin, signup} = useProfile()
+    const create = async () => {
+        try {
+            await signup(
+                signupUserName.current.value,
+                signupEmail.current.value,
+                signupPassword.current.value
+            )
+            navigate("/huskyboxd/home")
+        } catch (e) {
+            alert('oops')
         }
-        createUser(user);
     }
-    // const [newUser, setNewUser] = useState({username: '', email: '', password: ''});
-    const login = () => {
-        const user = {email: '', password: ''};
-        user.email = loginEmail.current.value;
-        user.password = loginPassword.current.value;
-        if (user.email.length === 0 || user.password.length === 0) {
-            navigate("/huskyboxd/login");
+    const login = async () => {
+        try {
+            await signin(
+                loginEmail.current.value,
+                loginPassword.current.value
+            )
+            navigate("/huskyboxd/home")
+        } catch (e) {
+            alert('oops')
+            console.log(e)
         }
-        findUserByCredentials(dispatch, user).then(() => console.log("login success"));
-        // navigate("/huskyboxd/detail/tt1160419")
     }
     const signupEmail = useRef();
     const signupPassword = useRef();
