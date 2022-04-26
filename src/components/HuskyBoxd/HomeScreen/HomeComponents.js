@@ -9,7 +9,6 @@ const HomeComponents = (
         login = false
     }
 ) => {
-
     return (
         <>
             {
