@@ -2,14 +2,9 @@ import React from "react";
 import {Link} from "react-router-dom";
 import "../Styles/card.css";
 
-const ProfListItem = ({prof={
-    "firstName": "Zhengyan", "lastName": "Mr.", "handle": "Code Elite",
-    "profilePicture": "../pictures/peaky_blinder.jpg",     "bannerPicture": "../pictures/horse.jpg",
-    "bio": "Student, Data Scientist, Algorithm Engineer",
-    "website": "youtube.com/webdevtv",
-    "location": "Boston, MA",    "dateOfBirth": "3/1998",    "dateJoined": "12/2020",
-    "films": 1638, "thisyear": 57, "lists": 12,   "followingCount": 666,    "followersCount": 0
-}})=> {
+
+const ProfListItem = ({prof})=> {
+    console.log(prof)
 
     return (
         <div style={{backgroundColor: "rgba(20,24,28,255)"}}>
@@ -22,8 +17,7 @@ const ProfListItem = ({prof={
                 <img src={prof.profilePicture} height="100px" width="100px" style={{"border-radius": "50%", "float": "left"}}/>
 
                 <span style={{"height":"50px", "padding-left": "40px"}}>
-                    <text style={{"color": "white", "font-size": "15px"}}><strong>{prof.lastName}</strong></text>
-                    <text style={{"color": "white", "font-size": "15px"}}><strong>{prof.firstName}</strong></text>
+                    <text style={{"color": "white", "font-size": "15px"}}><strong>{prof.username}</strong></text>
                     <br/>
                     <text style={{"color": "grey", "font-size": "15px", "padding-left": "30px"}}>Prime Member</text>
                 </span>
