@@ -4,12 +4,15 @@ import Navigation from "../Navigation";
 import MoviesList from "../MoviesList";
 import Comments from "../Comments";
 import PopularList from "../PopularList";
+import {useProfile} from "../contexts/profile-context";
 
 
 const HomeScreen = ({
     login = true
                     }) => {
-
+    const {profile} = useProfile();
+    console.log("fjdlkfjlsdjfsd")
+    console.log(profile.email);
     return (
         <>
         <div style={ {backgroundColor: "rgba(20,24,28,255)"}}>

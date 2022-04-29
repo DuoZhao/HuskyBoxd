@@ -7,9 +7,6 @@ export const ProfileProvider = ({children}) => {
     const [profile, setProfile] = useState()
 
     const signin = async (email, password) => {
-        console.log("signin context");
-        console.log(email)
-        console.log(password)
         try {
             const p = await service.signin(
                 email,
@@ -44,7 +41,23 @@ export const ProfileProvider = ({children}) => {
         }
     }
 
-    const value = {profile, signup, checkLoggedIn, signin}
+    const signupRealID = async (username, email, password, realID) => {
+        const realUser = true;
+        try {
+            const newUser = await service.signupRealID(
+                username,
+                email,
+                password,
+                realID,
+                realUser
+            )
+            setProfile(newUser)
+        } catch (e) {
+            throw e
+        }
+    }
+
+    const value = {profile, signup, checkLoggedIn, signin, signupRealID}
     return(
         <ProfileContext.Provider value={value}>
             {children}
