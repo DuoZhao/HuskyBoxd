@@ -1,5 +1,4 @@
 
-
 .wd-text {
     font-family: TiemposHeadlineWeb-Bold,Georgia,serif;
     color: white;
@@ -17,7 +16,7 @@
 .wd-avatar {
     width: 30px;
     height: 30px;
-    border-radius: 30px;
+    border-radius: 12px;
 }
 
 .wd-comment {

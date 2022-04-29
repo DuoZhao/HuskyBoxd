@@ -1,12 +1,18 @@
 import React from "react";
 import "../Styles/card.css";
+import {useNavigate} from "react-router-dom";
+
 const PosterComponents = (
     {movie = {
+        "_id" : "123",
         "poster" : "../pictures/images/poster/batman.jpg",
         "watch" : 123456,
         "like" : 123456
 }}) => {
 
+    // const goToMovieDetails = async () => {
+    //     navigate(`/huskyboxd/search/${id}`)
+    // }
     return (
         <div className="list-group-item p-0 m-0" style={{width: "154px", height: "229px"}}>
             <div className="wd-film me-1">

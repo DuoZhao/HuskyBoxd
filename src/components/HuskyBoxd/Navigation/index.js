@@ -1,23 +1,11 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {Link, useNavigate, useParams} from "react-router-dom";
+import React from 'react';
+import {Link} from "react-router-dom";
 import "./index.css"
 import "../Styles/navigation.css"
-
-import axios from "axios";
-//import Preformatted from "../components/preformatted";
-//import {useProfile} from "../contexts/profile-context";
-
 const Navigation = (
     {
         login = false
     }) => {
-
-    // const dispatch = useDispatch();
-    // const navigate = useNavigate();
-    //
-    // const search = () => {
-    //     navigate('/huskyboxd/search');
-    // }
 
     return (
         <>
@@ -65,17 +53,32 @@ const Navigation = (
                                 {
                                     login && <ul className="wd-menu-ul">
                                         <Link to="/huskyboxd/home">
-                                            <li className="wd-menu-li">Home</li>
+                                            <li className="wd-menu-li p-0 me-2">
+                                                <i className="fa fa-home me-1"/>
+                                                Home
+                                            </li>
                                         </Link>
                                         <Link to="/huskyboxd/profile">
-                                            <li className="wd-menu-li">Profile</li>
+                                            <li className="wd-menu-li p-0 me-2">
+                                                <i className="fa fa-user me-1"/>
+                                                Profile
+                                            </li>
                                         </Link>
                                         <Link to="/huskyboxd/search">
-                                            <li className="wd-menu-li">Search</li>
+                                            <li className="wd-menu-li p-0 me-2">
+                                                <i className="fa fa-search me-1"/>
+                                                Search
+                                            </li>
                                         </Link>
                                         {/*TODO*/}
-                                        <li className="wd-menu-li">FILMS</li>
-                                        <li className="wd-menu-li">LISTS</li>
+                                        <li className="wd-menu-li p-0 me-2">
+                                            <i className="fa fa-film me-1"/>
+                                            FILMS
+                                        </li>
+                                        <li className="wd-menu-li p-0 me-2">
+                                            <i className="fa fa-list me-1"/>
+                                            LISTS
+                                        </li>
                                     </ul>
                                 }
                             </nav>

@@ -2,18 +2,24 @@ import React from "react";
 import "./index.css"
 import "../Styles/card.css"
 import PosterComponents from "./PosterComponents";
-import CommentsComponents from "../Comments/CommentsComponents";
-
+import movie from "../data/myMovie.json";
 const MoviesList = () => {
     return (
         <div className="ms-4">
-            <div style={{borderBottom: "1px solid #456"}}>
-                POPULAR REVIEWS THIS WEEK
-            </div>
-            <div className="wd-films-list justify-content-center mt-2">
-                <PosterComponents/>
-            </div>
 
+            <div className="wd-divider">
+                NEW MOVIE THIS WEEK
+            </div>
+                <div className="wd-films-list justify-content-start mt-2">
+                    <>
+                        {
+                            movie.map(m => {
+                                return (<PosterComponents key={m.id} movie={m}/>);
+                            })
+                        }
+                    </>
+
+                </div>
         </div>
     );
 }

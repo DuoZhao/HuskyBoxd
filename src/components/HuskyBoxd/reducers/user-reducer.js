@@ -7,8 +7,8 @@ const profileData=[ {
     films: 1638, thisyear: 57, lists: 12,   followingCount: 666,    followersCount: 0,
 } ]
 
-const ProfileReducer = () => {
+const UserReducer = () => {
     return profileData;
 }
 
-export default ProfileReducer;
+export default UserReducer;

@@ -1,5 +1,5 @@
 import {Outlet} from "react-router-dom";
-import profileReducer from "./reducers/profile-reducer";
+import profileReducer from "./reducers/user-reducer";
 import SearchReducer from "./reducers/search-reducer";
 import movieReducer from "./reducers/movie-reducer";
 import loginReducer from "./reducers/login-reducer";

@@ -3,6 +3,7 @@ import {useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {findMovieImgByID} from "../actions/movie-detail-action";
+import movieStats from "./detailsIcon";
 
 const MovieDetailComponent = ({movie}) => {
     // const {movieId} = useParams();
@@ -54,10 +55,20 @@ const MovieDetailComponent = ({movie}) => {
                                 <h4 className="ms-3">{movie.Year}</h4>
                                 <text className="ms-3">Directed by {movie.Director}</text>
                                 <p>{movie.Plot}</p>
+                                <div className="d-flex justify-content-start">
+                                    <div className="flex-column">
+                                        <button className="far fa-eye" style={{color : "rgb(0, 224, 84)"}}/>
+                                    </div>
+                                    <div className="flex-column ms-2">
+                                        <button className="far fa-heart" style={{color : "rgb(255, 128, 0)"}}/>
+                                    </div>
+                                </div>
                             </section>
                         </div>
                     </div>
+
                 </div>
+
             </div>
         </>
     );

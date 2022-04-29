@@ -3,6 +3,7 @@ import MovieDetailComponent from "./MovieDetailComponent";
 import {findMovieByID} from "../actions/movie-detail-action.js";
 import {useDispatch, useSelector} from "react-redux";
 import {useParams} from "react-router-dom";
+import Comments from "../Comments";
 
 const MovieDetailScreen = () => {
     const {movieId} = useParams();

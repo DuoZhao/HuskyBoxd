@@ -4,47 +4,65 @@ import Navigation from "../Navigation";
 import MoviesList from "../MoviesList";
 import Comments from "../Comments";
 import PopularList from "../PopularList";
-
+import {useProfile} from "../contexts/profile-context";
 
 const HomeScreen = ({
-    login = true
+    login
                     }) => {
 
+    const profile = useProfile();
+    login = (profile !== null);
+    console.log(profile === null);
+    console.log(profile.username);
     return (
         <>
-        <div style={ {backgroundColor: "rgba(20,24,28,255)"}}>
+            <div style={ {backgroundColor: "rgba(20,24,28,255)"}}>
 
-            <div className="row">
-                <Navigation login={login}/>
-            </div>
-
-            <div className="row mt-auto">
-                <HomeComponents login={login}/>
-            </div>
-
-            <div className="row mt-1">
-                <MoviesList/>
-            </div>
-
-            <div className="row mt-auto">
-                <div className="col-1"/>
-                <div className="col-6">
-                    <Comments/>
+                {/*Navigation bar*/}
+                <div className="row">
+                    <Navigation login={login}/>
                 </div>
-                <div className="col-1"/>
-                <div className="col-3">
-                    <PopularList/>
-                </div>
-                <div className="col-1"/>
 
+                {/*Homepage*/}
+                <div className="row mt-auto">
+                    <HomeComponents login={login}/>
+                </div>
+
+                {/*Watched list*/}
+                <div className="row mt-1">
+                    <div className="col-1"/>
+                    <div className="col-10">
+                        <MoviesList/>
+                    </div>
+                    <div className="col-1"/>
+                </div>
+
+                {/*Popular movie list*/}
+                <div className="row mt-1">
+                    <div className="col-1"/>
+                    <div className="col-10">
+                        <MoviesList/>
+                    </div>
+                    <div className="col-1"/>
+                </div>
+
+                {/*Comments*/}
+                <div className="row mt-auto">
+                    <div className="col-1"/>
+
+                    <div className="col-5">
+                        <Comments/>
+                    </div>
+
+                    <div className="col-1"/>
+
+                    <div className="col-4">
+                        <PopularList/>
+                    </div>
+
+                    <div className="col-1"/>
+                </div>
             </div>
-            {/*<div className="row mt-auto">*/}
-            {/*    <PopularList/>*/}
-            {/*</div>*/}
-        </div>
-        {/*// <div>*/}
-        {/*//     <HomeComponents/>*/}
-        {/*// </div>*/}
         </>
     );
 }

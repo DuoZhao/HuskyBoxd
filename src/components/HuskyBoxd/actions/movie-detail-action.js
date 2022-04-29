@@ -14,7 +14,10 @@ export const findMovieByID = async (dispatch, movieId, needImage) => {
         type: FIND_MOVIE_BY_ID,
         movieInfo
     });
+    return movieInfo;
 }
+
+
 
 // export const findMovieImgByID = async (dispatch, movieId) => {
 //     const movieImg = await service.findMovieImgByID(movieId);
