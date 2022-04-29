@@ -4,20 +4,40 @@ import {useNavigate} from "react-router-dom";
 import {useProfile} from "../contexts/profile-context.js";
 const LoginComponent = () => {
     const navigate = useNavigate();
-    const {signin, signup} = useProfile()
+    const {signin, signup, signupRealID} = useProfile()
     const create = async () => {
         try {
-            await signup(
-                signupUserName.current.value,
-                signupEmail.current.value,
-                signupPassword.current.value
-            )
-            navigate("/huskyboxd/home")
+            if (!signupUserName.current.value || !signupEmail.current.value || !signupPassword.current.value) {
+                alert("Please enter your USERNAME, EMAIL and PASSWORD");
+                return;
+            }
+            if (checkboxRef && signupRealIDNumber.current.value) {
+                await signupRealID(
+                    signupUserName.current.value,
+                    signupEmail.current.value,
+                    signupPassword.current.value,
+                    signupRealIDNumber.current.value
+                )
+                navigate("/huskyboxd/home")
+            } else if (checkboxRef) {
+                alert("If you choose to sign up as a real person account, you should enter your real id.");
+            } else {
+                await signup(
+                    signupUserName.current.value,
+                    signupEmail.current.value,
+                    signupPassword.current.value
+                )
+                navigate("/huskyboxd/home")
+            }
         } catch (e) {
             alert('oops')
         }
     }
     const login = async () => {
+        if (!loginEmail.current.value || !loginPassword.current.value) {
+            alert("Please enter your EMAIL and PASSWORD");
+            return;
+        }
         try {
             await signin(
                 loginEmail.current.value,
@@ -26,7 +46,6 @@ const LoginComponent = () => {
             navigate("/huskyboxd/home")
         } catch (e) {
             alert('oops')
-            console.log(e)
         }
     }
     const signupEmail = useRef();
@@ -34,6 +53,8 @@ const LoginComponent = () => {
     const signupUserName = useRef();
     const loginEmail = useRef();
     const loginPassword = useRef();
+    const signupRealIDNumber = useRef();
+    const checkboxRef = useRef();
     return (
         <>
             <div className="container wd-login">
@@ -84,6 +105,20 @@ const LoginComponent = () => {
                                                     <input type="password" name="wd-signup-pass" className="form-style" ref={signupPassword}
                                                            placeholder="Your Password" id="wd-signup-pass" autoComplete="off"/>
                                                     <i className="input-icon fas fa-lock" id="wd-signup-lock"/>
+                                                </div>
+                                                <div className="form-group mt-2">
+                                                    <input type="text" name="wd-signup-realID" className="form-style" ref={signupRealIDNumber}
+                                                           placeholder="Choose Real ID and Enter Real ID Number" id="wd-signup-realID" autoComplete="off"/>
+                                                    <i className="input-icon fa-solid fa-fingerprint" id="wd-signup-readID"/>
+                                                </div>
+                                                <div className="form-group mt-2">
+                                                    <div className="switch-wrap">
+                                                        <label className="switch">
+                                                            <input type="checkbox" id="wd-check-realID" ref={checkboxRef}/>
+                                                            <span className="slider round"/>
+                                                        </label>
+                                                    </div>
+                                                    <label htmlFor="wd-check-realID">Role: Real ID Account?</label>
                                                 </div>
                                                 <a href="#" className="btn btn-primary mt-4" onClick={() => create()}>submit</a>
                                             </div>

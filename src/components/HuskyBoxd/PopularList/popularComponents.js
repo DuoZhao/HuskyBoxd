@@ -1,6 +1,7 @@
 import React from "react";
 import "./popularComponents.css"
 import "../Styles/card.css"
+import {Link} from "react-router-dom";
 
 const PopularComponents = () => {
 
@@ -30,10 +31,19 @@ const PopularComponents = () => {
                         <div className="card" >
                             <img src="https://a.ltrbxd.com/resized/story/image/4/2/8/8/6/2/0/shard/7354/blob-960-960-0-0-fill.jpg?k=d2c7e5bb2e" height="150px"/>
                             <div className="container">
-                                <h5><b>From Script to Screen: The Strange Alchemy of ‘Bad Lieutenant: Port of Call New Orleans’ by Soheil Rezayazdi’</b></h5>
+                                <h5><b>From Script to Screen: The Strange Alchemy of ‘Bad Lieutenant</b></h5>
                                 <p>The word “iguana” doesn’t appear in the shooting script of Bad Lieutenant: Port of Call New Orleans. And why should it? Written by veteran TV writer William Finkelstein, the script unfolds with the cause-and-effect logic of a tight police procedural. Prior to penning Bad Lieutenant, Finkelstein wrote more than 50 episodes of L.A. Law, created and wrote on Brooklyn South, and contributed to such cop show staples as Law & Order and NYPD Blue. The man knows how to write a coherent crime drama. </p>
                             </div>
                         </div>
+                        <br/><br/>
+                        <div>
+                            <Link to="/huskyboxd/privacy">
+                                <button>
+                                    Privacy Policy
+                                </button>
+                            </Link>
+                        </div>
+                        <br/><br/>
                     </div>
                 </div>
             </div>

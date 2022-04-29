@@ -20,6 +20,7 @@ import Import_Export from "./components/HuskyBoxd/EditProfile/import_export.js";
 import SearchScreen from "./components/HuskyBoxd/Search-Screen/index";
 import LoginScreen from "./components/HuskyBoxd/LoginScreen/LoginScreen";
 import MovieDetailScreen from "./components/HuskyBoxd/MovieDetailScreen/MovieDetailScreen";
+import PrivacyScreen from "./components/HuskyBoxd/PopularList/privacy";
 import {ProfileProvider} from "./components/HuskyBoxd/contexts/profile-context";
 
 function App() {
@@ -37,10 +38,10 @@ function App() {
                     <Route path="stores_streaming" element={<Stores_Streaming/>}/>
                     <Route path="import_export" element={<Import_Export/>}/>
                     <Route path="stat" element={<Stat/>}/>
-
+                    <Route path="privacy" element={<PrivacyScreen/>}/>
                     <Route path="search" element={<SearchScreen/>}/>
                     <Route path="search/:movieSearch" element={<SearchScreen/>}/>
-
+                    <Route path="profile/:userId" element={<ProfileScreen/>}/>
                     <Route path="home" element={<HomeScreen/>}/>
                 </Route>
             </Routes>

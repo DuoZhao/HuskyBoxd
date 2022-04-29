@@ -4,12 +4,12 @@ import "../Styles/card.css"
 
 
 
-const ProfileList = () => {
-
+const ProfileList = ({prof}) => {
+    console.log(prof)
 
     return (
         <ul className="list-group">
-            <ProfListItem/>
+            <ProfListItem prof={prof}/>
         </ul>
     );
 }

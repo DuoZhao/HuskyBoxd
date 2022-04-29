@@ -7,6 +7,11 @@ export const signup = async (username, email, password) => {
     return response.data
 }
 
+export const signupRealID = async (username, email, password, realID, realUser) => {
+    const response = await axios.post(`${API_URL}/signuprealid`, {username, email, password, realID, realUser})
+    return response.data
+}
+
 export const signin = async (email, password) => {
     const response = await axios.post(`${API_URL}/signin`,
         {email, password})
