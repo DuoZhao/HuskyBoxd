@@ -1,14 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ProfileList from './profile';
+import {useDispatch, useSelector} from "react-redux";
+import {useParams} from "react-router-dom";
+import {findUserByID} from "../actions/profile-actions";
 
 
 
 const ProfileScreen = () => {
+    const prof = useSelector((state) => state.profileReducer);
+    const {userId} = useParams();
+    const dispatch = useDispatch();
+    useEffect(() => findUserByID(dispatch, userId, true), []);
+
     return(
         <div>
 
             <div>
-                <ProfileList/>
+                <ProfileList prof={prof}/>
             </div>
 
 
